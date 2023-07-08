@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JavaScript Method</h1>
+    <p id="demo"></p>
+    <script>
+        class School{
+            constructor(name,year){
+                this.name = name;
+                this.year = year;
+            }
+            //method
+            age(x){
+                return x - this.year;
+            }
+        }
+
+        const date = new Date();
+        let year = date.getFullYear();
+
+        const mySchool = new School("Jana",2013);
+
+        document.getElementById("demo").innerHTML = "My school is"+mySchool.age(year) +" year old.";
+
+    </script>
+</body>
+</html>
