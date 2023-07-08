@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Today event topic in javascript</h1>
+    
+    <button type="button" onclick="document.getElementById('demo').innerHTML=Date()">this time is?</button>
+    <p id="demo"></p>
+    <button onclick="this.innerHTML=Date()">date&time</button>
+    <h3 id="main"></h3>
+    <button onclick="displayDate()">This time is?</button>
+    <script>
+        function displayDate(){
+            document.getElementById("main").innerHTML = Date();     
+        }
+    </script>
+</body>
+</html>
