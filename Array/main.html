@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JS Array.</h1>
+    <p id="demo"></p>
+    <!-- <script>
+        // const cars = ["Saab","Volvo","BMW"];
+        // const cars = [
+        //     "Saab",
+        //     "Volvo",
+        //     "BMW"
+        // ];
+        // const cars = [];
+        // cars[0]="Saab";
+        // cars[1]="Volvo";
+        // cars[2]="BMW";
+        // cars[3]="Backen"
+        const cars = ["Saab", "Volvo", "BMW"];
+        // cars[0] = "Opel"; 
+        document.getElementById("demo").innerHTML=cars.toString();
+    </script> -->
+
+    <!-- <script>
+    //the length property
+    const fruits = ["apple","banana","graphis","mango","orange"];
+    // document.getElementById("demo").innerHTML=fruits.length;
+    // document.getElementById("demo").innerHTML=fruits[0];
+    //document.getElementById("demo").innerHTML=fruits[fruits.length - 1];
+    </script> -->
+
+    <!-- //looping array element in array for loop will be used more.. -->
+    <!-- <script> 
+       
+        const fruits = ["Banana", "Orange", "Apple", "Mango"];
+        let flen = fruits.length;
+
+        let text = "<ul>";
+            for(let i=0;i<flen;i++){
+                text += "<li>"+ fruits[i] +"</li>";
+            }
+            text += "</ul>";
+        
+        document.getElementById("demo").innerHTML = text;
+    </script> -->
+    
+    <!--  forEach() in array 
+    Calling a function for each array element-->
+    <!-- <script>
+        const fruits = ["Banana", "Orange", "Apple", "Mango"];
+        let text = "<ul>";
+            fruits.forEach(myFace);
+            text+= "</ul>"
+        function myFace(value){
+            text+="<li>" + value +"</li>"
+        }
+        document.getElementById("demo").innerHTML = text;
+    </script> -->
+
+    <!-- PUSH Method  
+        <button type="button" onclick="myWorkSpace()">Click here</button>
+    <script>
+        const fruits = ["Banana", "Orange", "Apple", "Mango"];
+        document.getElementById("demo").innerHTML=fruits;
+
+        function myWorkSpace(){
+            fruits.push("lemon");
+            document.getElementById("demo").innerHTML=fruits;
+        }
+    </script> -->
+    
+    <!-- Adding elements with high indexes can create undefined "holes" in an array. 
+        <script>
+        const fruits = ["Banana", "Orange", "Apple", "Mango"];
+        fruits[6] = "lemon";
+        let flen = fruits.length;
+        let text = "<ul>";
+        for(i=0;i<flen;i++){
+            text += "<li>" +fruits[i] + "</li>";
+        }
+        text += "</ul>";
+
+        document.getElementById("demo").innerHTML = text;
+    </script> -->
+
+</body>
+</html>
